@@ -12,25 +12,25 @@
 
 运动的时候，我有时候跑得快些，有时候跑得慢些，用一段时长去除这段时间内跑过的距离就可以衡量跑的快慢了：真是个好主意。他们居然把这个主意用到了无限小的时间段，这本不足为奇，但他们称之为导数而且居然能够把脑袋分析得七零八落，这就怪了。拿运动来说，速度是位置对时间的导数，也就是每个时刻下在单位时长内能跑多远。不管了，用字母表示变量，借莱布尼兹的符号写一下：
 
-<img src="https://www.zhihu.com/equation?tex=v=\frac{ds}{dt},
-" alt="v=\frac{ds}{dt},
+<img src="https://www.zhihu.com/equation?tex=v=\frac{ds}{dt},\\
+" alt="v=\frac{ds}{dt},\\
 " class="ee_img tr_noresize" eeimg="1">
 用  <img src="https://www.zhihu.com/equation?tex=v" alt="v" class="ee_img tr_noresize" eeimg="1">  表示速度 (Velocity, *V*)， <img src="https://www.zhihu.com/equation?tex=s" alt="s" class="ee_img tr_noresize" eeimg="1">  表示位置 (Position) 或位移 (Displacement)——位置的移动量， <img src="https://www.zhihu.com/equation?tex=t" alt="t" class="ee_img tr_noresize" eeimg="1">  表示时刻或时长 (Time)。反之，知道了每个时刻的速度，把它们加起来自然就是一长段时间内的位移了，他们把这个过程叫积分：
 
-<img src="https://www.zhihu.com/equation?tex=\Delta s=s_2-s_1=\int_{t_1}^{t_2} v dt.
-" alt="\Delta s=s_2-s_1=\int_{t_1}^{t_2} v dt.
+<img src="https://www.zhihu.com/equation?tex=\Delta s=s_2-s_1=\int_{t_1}^{t_2} v dt.\\
+" alt="\Delta s=s_2-s_1=\int_{t_1}^{t_2} v dt.\\
 " class="ee_img tr_noresize" eeimg="1">
 大功告成。不过我还想知道此刻的速度是拖了后腿呢，还是拉了前腿？也就是从我跑步到现在，此刻的速度比不比我刚刚那段时间的平均速度快呢？那再定义一个平均速度吧。假如我开始跑步时记作时刻为零 ( <img src="https://www.zhihu.com/equation?tex=t=0" alt="t=0" class="ee_img tr_noresize" eeimg="1"> )，位置也记为零 ( <img src="https://www.zhihu.com/equation?tex=s=0" alt="s=0" class="ee_img tr_noresize" eeimg="1"> )，那么到现在为止我的平均速度就是
 
-<img src="https://www.zhihu.com/equation?tex=v_a=\frac{s}{t},
-" alt="v_a=\frac{s}{t},
+<img src="https://www.zhihu.com/equation?tex=v_a=\frac{s}{t},\\
+" alt="v_a=\frac{s}{t},\\
 " class="ee_img tr_noresize" eeimg="1">
  <img src="https://www.zhihu.com/equation?tex=v_a" alt="v_a" class="ee_img tr_noresize" eeimg="1">  是平均速度 (Average velocity, *AV*)。
 
 我让我的位置按抛物线变化吧，毕竟大自然不喜欢直线，先给个表达式：
 
-<img src="https://www.zhihu.com/equation?tex=s=t^2+16.
-" alt="s=t^2+16.
+<img src="https://www.zhihu.com/equation?tex=s=t^2+16.\\
+" alt="s=t^2+16.\\
 " class="ee_img tr_noresize" eeimg="1">
  <img src="https://www.zhihu.com/equation?tex=t=0" alt="t=0" class="ee_img tr_noresize" eeimg="1">  时  <img src="https://www.zhihu.com/equation?tex=s" alt="s" class="ee_img tr_noresize" eeimg="1">  咋不是 0 呢？嘿嘿，一开始呆了几秒看月亮，就把我的位置多加个 16 米吧。如果有人问起，我就说起跑时瞬移了 16 米，这不是啥稀奇事，那时高维空间的碎片正经过地球，而我恰好进了高维空间然后被往前带了 16 米而已。这就是它的图像：
 
@@ -39,9 +39,9 @@
 看看平均速度和瞬时速度怎么变的：
 
 <img src="https://www.zhihu.com/equation?tex=v_a=t+\frac{16}{t}, \\
-v=2t.
+v=2t.\\
 " alt="v_a=t+\frac{16}{t}, \\
-v=2t.
+v=2t.\\
 " class="ee_img tr_noresize" eeimg="1">
 <img src="https://raw.githubusercontent.com/lianfenghua/mdarticles/master/Data/imagination/va_v.png" style="zoom: 33%;" />
 
@@ -49,10 +49,10 @@ v=2t.
 
 <img src="https://www.zhihu.com/equation?tex=\frac{dv_a}{dt}=0 \implies \frac{d}{dt}\Big(\frac{s}{t}\Big)=
 \frac{\frac{ds}{dt}t-s}{t^2}=0 \\
-\implies \frac{ds}{dt}=\frac{s}{t}, \text{ or } v=v_a.
+\implies \frac{ds}{dt}=\frac{s}{t}, \text{ or } v=v_a.\\
 " alt="\frac{dv_a}{dt}=0 \implies \frac{d}{dt}\Big(\frac{s}{t}\Big)=
 \frac{\frac{ds}{dt}t-s}{t^2}=0 \\
-\implies \frac{ds}{dt}=\frac{s}{t}, \text{ or } v=v_a.
+\implies \frac{ds}{dt}=\frac{s}{t}, \text{ or } v=v_a.\\
 " class="ee_img tr_noresize" eeimg="1">
 
 我的平均速度先减小后增大，一开始平均速度特别大（瞬移的威力！），跑步时我的速度自然比不上瞬移，于是就把我的平均速度给拖慢了。只要我的速度比平均速度小，平均速度就会被继续拖慢，直到它俩相等。我越跑越快，当速度比平均速度还大时，就会把平均速度拉高。这样说来，*V* 自然会在 *AV* 的最低点和 *AV* 相交了。
@@ -68,11 +68,11 @@ v=2t.
 <img src="https://www.zhihu.com/equation?tex=s_A=10t, \\
 v_A=10. \\
 s_B=t^2+16, \\
-v_B=2t.
+v_B=2t.\\
 " alt="s_A=10t, \\
 v_A=10. \\
 s_B=t^2+16, \\
-v_B=2t.
+v_B=2t.\\
 " class="ee_img tr_noresize" eeimg="1">
 想一下速度函数的图像，绿线表示 *A* 的速度，红线表示 *B* 的速度。
 
@@ -80,18 +80,18 @@ v_B=2t.
 
 为求 *B* 落后于 *A* 的最大距离，把 *A* 领先 *B* 的位移写成一个函数：
 
-<img src="https://www.zhihu.com/equation?tex=s=s_A-s_B =-t^2+10t-16=-(t-5)^2+9.
-" alt="s=s_A-s_B =-t^2+10t-16=-(t-5)^2+9.
+<img src="https://www.zhihu.com/equation?tex=s=s_A-s_B =-t^2+10t-16=-(t-5)^2+9.\\
+" alt="s=s_A-s_B =-t^2+10t-16=-(t-5)^2+9.\\
 " class="ee_img tr_noresize" eeimg="1">
 那什么时候我被落得最远呢？这是 stationary value 的问题，最大值在导数为零处取得，令
 
-<img src="https://www.zhihu.com/equation?tex=\frac{ds}{dt}=\frac{ds_A}{dt}-\frac{ds_B}{dt}=v_A-v_B=0.
-" alt="\frac{ds}{dt}=\frac{ds_A}{dt}-\frac{ds_B}{dt}=v_A-v_B=0.
+<img src="https://www.zhihu.com/equation?tex=\frac{ds}{dt}=\frac{ds_A}{dt}-\frac{ds_B}{dt}=v_A-v_B=0.\\
+" alt="\frac{ds}{dt}=\frac{ds_A}{dt}-\frac{ds_B}{dt}=v_A-v_B=0.\\
 " class="ee_img tr_noresize" eeimg="1">
 哦，当我们速度相等时相距最远。根据
 
-<img src="https://www.zhihu.com/equation?tex=v_A=v_B \implies 10=2t \implies t=5 \implies s=9.
-" alt="v_A=v_B \implies 10=2t \implies t=5 \implies s=9.
+<img src="https://www.zhihu.com/equation?tex=v_A=v_B \implies 10=2t \implies t=5 \implies s=9.\\
+" alt="v_A=v_B \implies 10=2t \implies t=5 \implies s=9.\\
 " class="ee_img tr_noresize" eeimg="1">
 于是最远距离就是 9 m. “九米而已，还好啦。”今晚虽然没有黑影出现，但瞬移的事情却越来越想不通，“难道世上真有魔法？还是我小说看多了？那到底是真实经历的，还是我幻想出来的？啊，不对！”白鹿忽然轻呼一声，好像想到了什么，显得十分震惊。
 
@@ -116,10 +116,10 @@ v_B=2t.
 
 <img src="https://www.zhihu.com/equation?tex=C_f = l, \\
 C_v = m\ P+n\ Q, \\
-C_t = l+m\ P+n\ Q,
+C_t = l+m\ P+n\ Q,\\
 " alt="C_f = l, \\
 C_v = m\ P+n\ Q, \\
-C_t = l+m\ P+n\ Q,
+C_t = l+m\ P+n\ Q,\\
 " class="ee_img tr_noresize" eeimg="1">
 以上成本都按小时计，其中  <img src="https://www.zhihu.com/equation?tex=C_f" alt="C_f" class="ee_img tr_noresize" eeimg="1">  是固定成本 (Fixed cost, *FC*)，是个常数； <img src="https://www.zhihu.com/equation?tex=C_v" alt="C_v" class="ee_img tr_noresize" eeimg="1">  是可变成本 (Variable cost, *VC*)，包括随人数 ( <img src="https://www.zhihu.com/equation?tex=P" alt="P" class="ee_img tr_noresize" eeimg="1"> ) 增加的人力成本和随产量 ( <img src="https://www.zhihu.com/equation?tex=Q" alt="Q" class="ee_img tr_noresize" eeimg="1"> ) 增加的产品成本，假设均匀增加：每增加一个人，成本增加  <img src="https://www.zhihu.com/equation?tex=m" alt="m" class="ee_img tr_noresize" eeimg="1"> ，每生产一个产品，成本增加  <img src="https://www.zhihu.com/equation?tex=n" alt="n" class="ee_img tr_noresize" eeimg="1"> ； <img src="https://www.zhihu.com/equation?tex=C_t" alt="C_t" class="ee_img tr_noresize" eeimg="1">  是总成本 (Total cost, *TC*)。
 
@@ -137,10 +137,10 @@ l = 300, m = 100, n = 5
 
 <img src="https://www.zhihu.com/equation?tex=C_{af} = \frac{C_f}{Q} = \frac{l}{Q}, \\
 C_{av} = \frac{C_v}{Q} = \frac{mP}{Q}+n, \\
-C_{at} = \frac{C_t}{Q} = \frac{l}{Q} + \frac{mP}{Q} + n.
+C_{at} = \frac{C_t}{Q} = \frac{l}{Q} + \frac{mP}{Q} + n.\\
 " alt="C_{af} = \frac{C_f}{Q} = \frac{l}{Q}, \\
 C_{av} = \frac{C_v}{Q} = \frac{mP}{Q}+n, \\
-C_{at} = \frac{C_t}{Q} = \frac{l}{Q} + \frac{mP}{Q} + n.
+C_{at} = \frac{C_t}{Q} = \frac{l}{Q} + \frac{mP}{Q} + n.\\
 " class="ee_img tr_noresize" eeimg="1">
 
 再写一下各个成本的含义：
@@ -159,8 +159,8 @@ C_{at} = \frac{C_t}{Q} = \frac{l}{Q} + \frac{mP}{Q} + n.
 
 总成本对产量求个导就是边际成本了，表示在每一产量之下，增加单位产量时成本的增加量。这里把成本看作  <img src="https://www.zhihu.com/equation?tex=P" alt="P" class="ee_img tr_noresize" eeimg="1">  和  <img src="https://www.zhihu.com/equation?tex=Q" alt="Q" class="ee_img tr_noresize" eeimg="1">  的二元函数，同时  <img src="https://www.zhihu.com/equation?tex=P" alt="P" class="ee_img tr_noresize" eeimg="1">  和  <img src="https://www.zhihu.com/equation?tex=Q" alt="Q" class="ee_img tr_noresize" eeimg="1">  可以相互转化，于是
 
-<img src="https://www.zhihu.com/equation?tex=C_m=\frac{dC_t}{dQ}=m\frac{dP}{dQ}+n,
-" alt="C_m=\frac{dC_t}{dQ}=m\frac{dP}{dQ}+n,
+<img src="https://www.zhihu.com/equation?tex=C_m=\frac{dC_t}{dQ}=m\frac{dP}{dQ}+n,\\
+" alt="C_m=\frac{dC_t}{dQ}=m\frac{dP}{dQ}+n,\\
 " class="ee_img tr_noresize" eeimg="1">
 
 这里的  <img src="https://www.zhihu.com/equation?tex=C_m" alt="C_m" class="ee_img tr_noresize" eeimg="1">  就是边际成本 (Marginal cost, *MC*)，沿用之前那个合适的生产函数，继续画条线，用红色表示，可见边际成本随产量的增加而增加。
@@ -171,10 +171,10 @@ C_{at} = \frac{C_t}{Q} = \frac{l}{Q} + \frac{mP}{Q} + n.
 
 <img src="https://www.zhihu.com/equation?tex=\frac{dC_{at}}{dQ}=0 \implies \frac{d}{dQ}\Big(\frac{C_t}{Q}\Big)=
 \frac{\frac{dC_t}{dQ}Q-C_t}{Q^2}=0 \\
-\implies \frac{dC_t}{dQ}=\frac{C_t}{Q}, \text{ or } C_m=C_{at}.
+\implies \frac{dC_t}{dQ}=\frac{C_t}{Q}, \text{ or } C_m=C_{at}.\\
 " alt="\frac{dC_{at}}{dQ}=0 \implies \frac{d}{dQ}\Big(\frac{C_t}{Q}\Big)=
 \frac{\frac{dC_t}{dQ}Q-C_t}{Q^2}=0 \\
-\implies \frac{dC_t}{dQ}=\frac{C_t}{Q}, \text{ or } C_m=C_{at}.
+\implies \frac{dC_t}{dQ}=\frac{C_t}{Q}, \text{ or } C_m=C_{at}.\\
 " class="ee_img tr_noresize" eeimg="1">
 
 咦，这句话好像在哪里见过？是速度与平均速度的关系！原来它们是一样的。当边际成本等于平均总成本时平均总成本取最小值。
@@ -194,28 +194,28 @@ C_{at} = \frac{C_t}{Q} = \frac{l}{Q} + \frac{mP}{Q} + n.
 好，那以小时为单位，我们就叫它总收益 (Total revenue, *TR*)，我们的收益就是产量乘以单价喽：
 
 
-<img src="https://www.zhihu.com/equation?tex=R_t=PQ,
-" alt="R_t=PQ,
+<img src="https://www.zhihu.com/equation?tex=R_t=PQ,\\
+" alt="R_t=PQ,\\
 " class="ee_img tr_noresize" eeimg="1">
 
 这里  <img src="https://www.zhihu.com/equation?tex=P" alt="P" class="ee_img tr_noresize" eeimg="1">  是价格，不是之前的人数了。
 
 仿照成本的分析，我们再定义一个平均收益 (Average revenue, *AR*)，也就是单位产量的收益，等于价格：
 
-<img src="https://www.zhihu.com/equation?tex=R_a=\frac{R_t}{Q}=P.
-" alt="R_a=\frac{R_t}{Q}=P.
+<img src="https://www.zhihu.com/equation?tex=R_a=\frac{R_t}{Q}=P.\\
+" alt="R_a=\frac{R_t}{Q}=P.\\
 " class="ee_img tr_noresize" eeimg="1">
 
 当然还有边际收益 (Marginal revenue, *MR*)，指的是每一产量之下单位产量的收益：
 
-<img src="https://www.zhihu.com/equation?tex=R_m=\frac{dR_t}{dQ}=\frac{d(PQ)}{dQ}=P+\frac{dP}{dQ}Q.
-" alt="R_m=\frac{dR_t}{dQ}=\frac{d(PQ)}{dQ}=P+\frac{dP}{dQ}Q.
+<img src="https://www.zhihu.com/equation?tex=R_m=\frac{dR_t}{dQ}=\frac{d(PQ)}{dQ}=P+\frac{dP}{dQ}Q.\\
+" alt="R_m=\frac{dR_t}{dQ}=\frac{d(PQ)}{dQ}=P+\frac{dP}{dQ}Q.\\
 " class="ee_img tr_noresize" eeimg="1">
 
 价格又不是我们能左右的，据说这叫完全竞争市场。“啥时候可以搞点垄断撒？”奚午幽幽地说。竞争市场简单一些，我们来看这个吧。如果价格是常数，那这几个量都是水平线：
 
-<img src="https://www.zhihu.com/equation?tex=R_m=P=R_a.
-" alt="R_m=P=R_a.
+<img src="https://www.zhihu.com/equation?tex=R_m=P=R_a.\\
+" alt="R_m=P=R_a.\\
 " class="ee_img tr_noresize" eeimg="1">
 
 ## 真的会有利润？
@@ -225,8 +225,8 @@ C_{at} = \frac{C_t}{Q} = \frac{l}{Q} + \frac{mP}{Q} + n.
 收益减去成本就是利润 (Profit,  <img src="https://www.zhihu.com/equation?tex=P_{ro}" alt="P_{ro}" class="ee_img tr_noresize" eeimg="1"> ) 了：
 
 
-<img src="https://www.zhihu.com/equation?tex=P_{ro}=R_t-C_t.
-" alt="P_{ro}=R_t-C_t.
+<img src="https://www.zhihu.com/equation?tex=P_{ro}=R_t-C_t.\\
+" alt="P_{ro}=R_t-C_t.\\
 " class="ee_img tr_noresize" eeimg="1">
 
 想一下边际总成本 (红线) 和边际收益 (绿线) 的图像：
@@ -235,13 +235,13 @@ C_{at} = \frac{C_t}{Q} = \frac{l}{Q} + \frac{mP}{Q} + n.
 
 那什么时候利润最大呢？这是 stationary value 的问题，最大值在导数为零处取得，令
 
-<img src="https://www.zhihu.com/equation?tex=\frac{dP_{ro}}{dQ}=\frac{dR_t}{dQ}-\frac{dC_t}{dQ}=R_m-C_m=0.
-" alt="\frac{dP_{ro}}{dQ}=\frac{dR_t}{dQ}-\frac{dC_t}{dQ}=R_m-C_m=0.
+<img src="https://www.zhihu.com/equation?tex=\frac{dP_{ro}}{dQ}=\frac{dR_t}{dQ}-\frac{dC_t}{dQ}=R_m-C_m=0.\\
+" alt="\frac{dP_{ro}}{dQ}=\frac{dR_t}{dQ}-\frac{dC_t}{dQ}=R_m-C_m=0.\\
 " class="ee_img tr_noresize" eeimg="1">
 哦，当边际成本等于边际收益时利润最大。进而根据
 
-<img src="https://www.zhihu.com/equation?tex=R_m=C_m \implies Q_{max} \implies P_{ro,max}.
-" alt="R_m=C_m \implies Q_{max} \implies P_{ro,max}.
+<img src="https://www.zhihu.com/equation?tex=R_m=C_m \implies Q_{max} \implies P_{ro,max}.\\
+" alt="R_m=C_m \implies Q_{max} \implies P_{ro,max}.\\
 " class="ee_img tr_noresize" eeimg="1">
 这是边际成本与边际收益之交点。咦，前面几句话怎么也挺耳熟，这不是跑步时我最难忘的那个时刻吗？想到这里，白鹿赶快在纸上写下几句话，总结这些分析：
 
