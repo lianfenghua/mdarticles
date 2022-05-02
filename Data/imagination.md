@@ -30,14 +30,14 @@ s=t^2+16.
 $$
 $t=0$ 时 $s$ 咋不是 0 呢？嘿嘿，一开始呆了几秒看月亮，就把我的位置多加个 16 米吧。如果有人问起，我就说起跑时瞬移了 16 米，这不是啥稀奇事，那时高维空间的碎片正经过地球，而我恰好进了高维空间然后被往前带了 16 米而已。这就是它的图像：
 
-<img src="./imagination/s.svg" style="zoom: 33%;" />
+<img src="./imagination/s.png" style="zoom: 33%;" />
 
 看看平均速度和瞬时速度怎么变的：
 $$
 v_a=t+\frac{16}{t}, \\
 v=2t.
 $$
-<img src="./imagination/va_v.svg" style="zoom: 33%;" />
+<img src="./imagination/va_v.png" style="zoom: 33%;" />
 
 图中蓝线表示平均速度，红线表示瞬时速度。可知 *V* 曲线与 *AV* 曲线在 *AV* 曲线的最低点处相交。这是必然的，因为
 $$
@@ -63,7 +63,7 @@ v_B=2t.
 $$
 想一下速度函数的图像，绿线表示 *A* 的速度，红线表示 *B* 的速度。
 
-<img src="./imagination/v_v.svg" style="zoom: 33%;" />
+<img src="./imagination/v_v.png" style="zoom: 33%;" />
 
 为求 *B* 落后于 *A* 的最大距离，把 *A* 领先 *B* 的位移写成一个函数：
 $$
@@ -84,7 +84,7 @@ $$
 - 速度曲线 (*V*) 与平均速度曲线 (*AV*) 在平均速度曲线的最低点处相交；
 - 在周冲领先我的距离最大的那个时刻，我们的速度相等 (*V* of A = *V* of B)。
 
-<img src="./imagination/va_v_v.svg" style="zoom: 33%;" />
+<img src="./imagination/va_v_v.png" style="zoom: 33%;" />
 
 ## 来做冰淇淋吧
 
@@ -106,7 +106,7 @@ $$
 
 这里有两个变量 *P* 和 *Q*，它们的关系是生产函数。现在我们只想看看随产量变化的情况。人力之外的成本随产量线性增加，但人力成本随产量增加得越来越快，使得总成本随产量增加得越来越快。不过，在产量较小时可以看作线性增加。找个合适的函数（产量对人数的变化率随人数均匀减小）再画个图来表示：
 
-<img src="./imagination/cf_cv_ct.svg" style="zoom:33%;" />
+<img src="./imagination/cf_cv_ct.png" style="zoom:33%;" />
 
 ```
 l = 300, m = 100, n = 5
@@ -129,7 +129,7 @@ $$
 
 画个图来表示，图例和上面的含义一致：
 
-<img src="./imagination/caf_cav_cat.svg" style="zoom:33%;" />
+<img src="./imagination/caf_cav_cat.png" style="zoom:33%;" />
 
 可以看到，平均固定成本 *AFC* 随产量减小（反比例函数）；平均可变成本 *AVC* 随产量增加，产量较小时为线性增加，之后随着产量的增加上升得越来越快。由于二者共同作用，平均总成本 *ATC* 先减小后增加，呈现 U 形。
 
@@ -142,7 +142,7 @@ $$
 
 这里的 $C_m$ 就是边际成本 (Marginal cost, *MC*)，沿用之前那个合适的生产函数，继续画条线，用红色表示，可见边际成本随产量的增加而增加。
 
-<img src="./imagination/cat_cm.svg" style="zoom:33%;" />
+<img src="./imagination/cat_cm.png" style="zoom:33%;" />
 
 看图像可知 *MC* 曲线与 *ATC* 曲线在 *ATC* 曲线的最低点处相交。这是必然的，因为
 $$
@@ -200,7 +200,7 @@ $$
 
 想一下边际总成本 (红线) 和边际收益 (绿线) 的图像：
 
-<img src="./imagination/cm_rm.svg" style="zoom:33%;" />
+<img src="./imagination/cm_rm.png" style="zoom:33%;" />
 
 那什么时候利润最大呢？这是 stationary value 的问题，最大值在导数为零处取得，令
 $$
@@ -215,7 +215,7 @@ $$
 - 边际成本曲线 (*MC*) 与平均总成本曲线 (*ATC*) 在平均总成本曲线的最低点处相交；
 - 在总利润最大的那个时刻，边际成本等于边际收益 (*MC* = *MR*)。
 
-<img src="./imagination/cat_cm_rm.svg" style="zoom:33%;" />
+<img src="./imagination/cat_cm_rm.png" style="zoom:33%;" />
 
 欣喜于某种相似性，紧接着补上几个概念以作类比：
 

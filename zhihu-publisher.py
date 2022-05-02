@@ -52,9 +52,9 @@ def rename_image_ref(m, original=True):
         return m.group(0)
     if os.path.getsize(image_folder_path.parent/m.group(1+int(original)))>COMPRESS_THRESHOLD:
         if original:
-            image_ref_name = Path(m.group(2)).stem+".svg"
+            image_ref_name = Path(m.group(2)).stem+".png"
         else:
-            image_ref_name = Path(m.group(1)).stem+".svg"
+            image_ref_name = Path(m.group(1)).stem+".png"
     else:
         if original:
             image_ref_name = Path(m.group(2)).name
@@ -94,7 +94,7 @@ def reduce_image_size():
                 img=img.resize((1920,int(1920*img.size[1]/img.size[0])),Image.ANTIALIAS)
             elif(img.size[1]>img.size[0] and img.size[1]>1080):
                 img=img.resize((int(1080*img.size[0]/img.size[1]),1080),Image.ANTIALIAS)
-            img.convert('RGB').save(str(image_folder_new_path/(image_path.stem+".svg")), optimize=True,quality=85)
+            img.convert('RGB').save(str(image_folder_new_path/(image_path.stem+".png")), optimize=True,quality=85)
         else:
             copyfile(image_path, str(image_folder_new_path/image_path.name))
     image_folder_path = image_folder_new_path
