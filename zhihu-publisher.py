@@ -52,9 +52,9 @@ def rename_image_ref(m, original=True):
         return m.group(0)
     if os.path.getsize(image_folder_path.parent/m.group(1+int(original)))>COMPRESS_THRESHOLD:
         if original:
-            image_ref_name = Path(m.group(2)).stem+".jpg"
+            image_ref_name = Path(m.group(2)).stem+".svg"
         else:
-            image_ref_name = Path(m.group(1)).stem+".jpg"
+            image_ref_name = Path(m.group(1)).stem+".svg"
     else:
         if original:
             image_ref_name = Path(m.group(2)).name
